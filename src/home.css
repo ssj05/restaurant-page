@@ -1,0 +1,21 @@
+.hero {
+  padding: 3rem;
+  text-align: center;
+  background-image: url("https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.order-btn {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #ffd700;
+  color: #8b0000;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
