@@ -1,0 +1,49 @@
+.menu {
+  padding: 3rem;
+  background-color: #fffef7;
+  color: #333;
+  text-align: center;
+}
+
+.menu h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #8b0000;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.menu-item {
+  background-color: #fff4dd;
+  border: 1px solid #f0d9b5;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  background-color: #ffd700;
+  color: #8b0000;
+  font-weight: bold;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}

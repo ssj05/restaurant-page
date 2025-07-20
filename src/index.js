@@ -1,17 +1,31 @@
 import "./styles.css";
 import renderHome from "./home";
+import menu from "./menu";
 
-function clearContent() {
-	const content = document.querySelector("#content");
-	content.replaceChildren();
+class loadPage {
+	content = document.querySelector("#content");
+
+	clearContent() {
+		this.content.replaceChildren();
+	}
+
+	loadHome() {
+		this.clearContent();
+		this.content.appendChild(renderHome());
+	}
+
+	loadMenu() {
+		this.clearContent();
+		this.content.appendChild(menu());
+	}
+	assignEvent() {
+		const homeBtn = document.querySelector("#home");
+		homeBtn.addEventListener("click", () => this.loadHome());
+		const menuBtn = document.querySelector("#menu");
+		menuBtn.addEventListener("click", () => this.loadMenu());
+	}
 }
 
-function loadHome() {
-	clearContent();
-	const content = document.querySelector("#content");
-	content.appendChild(renderHome());
-}
-
-loadHome();
-const homeBtn = document.querySelector("#home");
-homeBtn.addEventListener("click", loadHome);
+const page = new loadPage();
+page.loadHome();
+page.assignEvent();
